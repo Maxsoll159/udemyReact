@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { SegundoComponente, TercerComponente } from './SegundoComponente';
-import { HellowWorldApp } from './HelloWordAppReact';
+
 import './style.css';
+import { CounterApp } from './CounterApp';
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-    <SegundoComponente />
-    <HellowWorldApp />
-    <TercerComponente />
+    <CounterApp value={123}/>
   </React.StrictMode>
 );
